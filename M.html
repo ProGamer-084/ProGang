@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo" id="logo">
+            <h1 class="title" id="title">Website Title</h1>
+            <button id="edit-title-btn">Edit</button>
+            <button id="toggle-theme-btn">Dark Mode</button>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Short description of the website.</p>
+        </section>
+        <section id="channels">
+            <h2>Channel Links</h2>
+            <div class="channel">
+                <a href="https://www.youtube.com/@progamer-w1x" target="_blank">Channel 1</a>
+                <p>Description for Channel 1.</p>
+            </div>
+            <div class="channel">
+                <a href="https://www.youtube.com/@ProGamer-k4g" target="_blank">Channel 2</a>
+                <p>Description for Channel 2.</p>
+            </div>
+        </section>
+        <section id="social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.youtube.com/@progamer-w1x" target="_blank" class="social-icon">YouTube</a>
+            <a href="https://discord.com/invite/your-discord-link" target="_blank" class="social-icon">Discord</a>
+        </section>
+        <section id="description">
+            <h2>The website contains</h2>
+            <p>Detailed description of the website.</p>
+        </section>
+        <section id="footer">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+            <button id="subscribe-btn">Subscribe</button>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+                <h2>Edit Title</h2>
+                <input type="text" id="new-title" value="Website Title">
+                <button id="save-title-btn">Save</button>
+            </div>
+        </div>
+        <div id="profile-pic-section">
+            <h2>Edit Profile Picture</h2>
+            <input type="file" id="upload-image">
+            <div id="profile-pic-container">
+                <img src="profile-pic-placeholder.png" alt="Profile Picture" id="profile-pic">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
